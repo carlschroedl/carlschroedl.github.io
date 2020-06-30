@@ -60,6 +60,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position-x: 40%;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   line-height: 1.3;
@@ -83,7 +84,6 @@ body {
 h2 {
   text-transform: uppercase;
   font-size: 50px;
-  font-weight: 120;
   color: #ffffff;
   text-shadow: 0 0 5px black;
   letter-spacing: 0.05em;
@@ -123,6 +123,12 @@ p {
 .link-icon {
   display: block;
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 450px) {
+  #intro { 
+    top: 5%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
