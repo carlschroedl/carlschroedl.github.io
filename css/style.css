@@ -41,8 +41,6 @@ table {
   border-spacing: 0;
 }
 
-/* particleground demo */
-
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -51,7 +49,7 @@ table {
 
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -59,7 +57,8 @@ body {
   background-image: url('../assets/great-lakes-from-space.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  min-height: 100vh;
   background-position-x: 40%;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -67,17 +66,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#particles {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 #intro {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 45%;
-  padding: 0 10px;
+  top: auto;
+  padding: 20vh 10px 2rem;
   width: 100%;
   text-align: center;
 }
@@ -127,13 +120,13 @@ p {
 
 @media only screen and (min-width: 450px) and (max-width: 768px){
   #intro { 
-    top: 30%;
+    padding-top: 15vh;
   }
 }
 
 @media only screen and (max-width: 450px) {
   #intro { 
-    top: 5%;
+    padding-top: 1.5rem;
   }
 }
 
