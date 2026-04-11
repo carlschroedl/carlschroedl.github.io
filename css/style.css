@@ -34,20 +34,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body > div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+}
+
 #intro {
   position: relative;
   left: 0;
   top: auto;
-  padding: 20vh 10px 2rem;
-  width: 100%;
+  padding: 1.5rem 10px;
   text-align: center;
 }
-h2 {
+h1 {
   text-transform: uppercase;
   font-size: 50px;
   color: #ffffff;
   text-shadow: 0 0 5px black;
   letter-spacing: 0.05em;
+  font-weight: normal;
 }
 
 .link-cells {
@@ -72,14 +80,17 @@ h2 {
   font-size: 3rem;
 }
 
-@media only screen and (min-width: 450px) and (max-width: 768px){
-  #intro { 
-    padding-top: 15vh;
+@media only screen and (max-width: 450px) {
+  #intro {
+    padding: 1rem 10px;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  #intro { 
-    padding-top: 1.5rem;
+@media only screen and (min-width: 1000px) {
+  #intro {
+    width: 75%;
+  }
+  #intro > h1 > div {
+    display: inline;
   }
 }
