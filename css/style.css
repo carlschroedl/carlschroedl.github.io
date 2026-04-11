@@ -1,4 +1,10 @@
-html, body, div, h2, hr, a, i {
+html,
+body,
+div,
+h2,
+hr,
+a,
+i {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,24 +17,25 @@ body {
 }
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   min-height: 100%;
 }
 
 body {
   background-color: black;
-  background-image: url('../assets/great-lakes-from-space.jpg');
+  background-image: url("../assets/great-lakes-from-space.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   min-height: 100vh;
   background-position-x: 40%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
@@ -66,13 +73,13 @@ h1 {
 }
 
 .link-cell a {
-  color:white;
+  color: white;
   text-shadow: 0 0 1rem black;
 }
 
 .link-label {
   display: block;
-  font-weight: bold;;
+  font-weight: bold;
 }
 
 .link-icon {
@@ -92,5 +99,11 @@ h1 {
   }
   #intro > h1 > div {
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  #intro > h1 > div {
+    display: block;
   }
 }
